@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Toko & Formulir Kontak</title>
+</head>
+<body>
+
+  <!-- Header & Navigasi -->
+  <header>
+    <h1>Toko Online Saya</h1>
+    <nav>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Profil Toko -->
+    <section id="profil">
+      <h2>Profil Kami</h2>
+      <p>Kami adalah penyedia produk digital terbaik yang berfokus pada kualitas dan kepuasan pelanggan.</p>
+    </section>
+
+    <!-- Section 2: Produk Terstruktur -->
+    <section id="produk">
+      <h2>Daftar Produk</h2>
+
+      <article>
+        <h3>Kemeja Casual</h3>
+        <p>Harga: Rp 150.000</p>
+        <p>Kemeja berbahan katun nyaman untuk harian.</p>
+      </article>
+
+      <article>
+        <h3>Sepatu Sneakers</h3>
+        <p>Harga: Rp 350.000</p>
+        <p>Sepatu ringan dengan desain modern.</p>
+      </article>
+    </section>
+
+    <!-- Section 3: Form Lengkap -->
+    <section id="kontak">
+      <h2>Hubungi Kami / Pemesanan</h2>
+
+      <form action="#" method="POST">
+        <!-- Input Teks Biasa -->
+        <div>
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+        </div>
+
+        <br>
+
+        <!-- Input Email -->
+        <div>
+          <label for="email">Alamat Email:</label>
+          <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+        </div>
+
+        <br>
+
+        <!-- Select (Dropdown) -->
+        <div>
+          <label for="kategori">Kategori Pertanyaan:</label>
+          <select id="kategori" name="kategori">
+            <option value="tanya-produk">Tanya Produk</option>
+            <option value="keluhan">Keluhan</option>
+            <option value="kerjasama">Kerjasama</option>
+          </select>
+        </div>
+
+        <br>
+
+        <!-- Textarea (Teks Panjang) -->
+        <div>
+          <label for="pesan">Pesan / Detail Pesanan:</label><br>
+          <textarea id="pesan" name="pesan" rows="4" cols="30" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+        </div>
+
+        <br>
+
+        <!-- Button Submit -->
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Toko Online Saya. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
