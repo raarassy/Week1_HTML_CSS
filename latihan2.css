@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
+/* 1. NAVBAR (FLEXBOX) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 16px 32px;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #a7ddf4;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #a7ddf4;
+}
+
+/* 2. HERO SECTION (FLEXBOX COLUMN) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 600px;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+.btn-hero {
+  background-color: #a7ddf4;
+  color: #0f172a;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-hero:hover {
+  background-color: #6fc1e7;
+}
+
+/* 3. CARDS SECTION (CSS GRID) */
+.cards-container {
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 0 24px;
+
+  display: grid;
+  /* Grid responsif otomatis */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* 4. FOOTER (FLEXBOX) */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  color: #94a3b8;
+  padding: 24px;
+  margin-top: 48px;
+  font-size: 14px;
+}
