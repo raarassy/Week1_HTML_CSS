@@ -1,0 +1,87 @@
+/* border-box*/
+* {
+  box-sizing: border-box;
+}
+
+
+/* untuk semua elemen <p> */
+p {
+  color: red;
+}
+
+
+/* contoh cascade */
+h1 {
+  color: black;
+}
+h1 {
+  color: purple;
+}
+
+
+/* untuk CLASS "judul" */
+.judul {
+  color: blue;
+}
+
+
+/* untuk ID "utama" */
+#utama {
+  color: red;
+}
+
+
+/* untuk semua elemen */
+* {
+  color: rgb(204, 30, 30);
+}
+
+
+/* untuk hierarchy */
+.card h3 {
+    color: green;
+}
+.card > p {
+    color: pink;
+}  
+
+
+/* untuk specificity */
+p {
+  color: red;
+}
+.buah {
+  color: blue;
+}
+
+p {
+    color: rgb(204, 30, 30);
+}
+.kota {
+    color: purple;
+}
+#provinsi {
+    color: rgb(172, 172, 14);
+}
+
+
+/* box model */
+.card {
+    width: 200px;
+    height: 190px;
+    padding: 18px;
+    border: 5px solid gray;
+    margin: 50px;
+}
+
+/* typography, color, border radius,  */
+h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #f5d6e9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
