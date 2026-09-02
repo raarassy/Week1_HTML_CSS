@@ -134,3 +134,52 @@ body {
   margin-top: 48px;
   font-size: 14px;
 }
+
+/*  RESPONSIVE DESIGN (MEDIA QUERIES) */
+
+/* 1. Layar Tablet & HP */
+@media (max-width: 768px) {
+  
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .cards-container {
+    margin: 32px auto;
+    padding: 0 16px;
+    gap: 20px;
+  }
+}
+
+/* 2. Layar HP Kecil */
+@media (max-width: 480px) {
+  .nav-links {
+    font-size: 14px;
+  }
+
+  .btn-hero {
+    width: 100%;
+  }
+
+  .card {
+    padding: 24px 16px;
+  }
+}
